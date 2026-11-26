@@ -1,0 +1,790 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Exness Login™ | Account Access, MT4 & MT5 Guide</title>
+    <meta
+      name="description"
+      content="Exness Login page. Log in to your Exness account and access your personal area for an efficient and secure trading experience."
+    />
+    <meta
+      name="keywords"
+      content="Exness Markets Login, Exness Login, Exness Personal Area, Exness MT4 Login, Exness MT5 Login, Exness Trading Account"
+    />
+    <meta name="robots" content="index,follow" />
+    <meta name="theme-color" content="#111111" />
+       <!-- Favicon -->
+    <link rel="icon" href="/exness.png" type="image/png" />
+    <style>
+      :root {
+        --bg: #f6f6f6;
+        --ink: #171717;
+        --muted: #666;
+        --line: #e7e7e7;
+        --orange: #ff6b00;
+        --orange-dark: #e85f00;
+        --dark: #111;
+        --card: #fff;
+        --soft: #fff2e8;
+        --shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+      }
+      * {
+        box-sizing: border-box;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--ink);
+        font:
+          16px/1.7 Arial,
+          Helvetica,
+          sans-serif;
+      }
+      a {
+        color: var(--orange-dark);
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      .wrap {
+        width: min(1120px, 92%);
+        margin: auto;
+      }
+      .header {
+        background: var(--dark);
+        color: #fff;
+        padding: 18px 0 48px;
+      }
+      .nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 18px;
+      }
+      .brand {
+        display: flex;
+        align-items: center;
+        gap: 11px;
+        font-size: 1.35rem;
+        font-weight: 800;
+        letter-spacing: 0.2px;
+      }
+      .brand-mark {
+        width: 38px;
+        height: 38px;
+        border-radius: 10px;
+        background: var(--orange);
+        display: grid;
+        place-items: center;
+        color: #111;
+        font-weight: 900;
+        font-size: 1.35rem;
+      }
+      .navlinks {
+        display: flex;
+        gap: 22px;
+        align-items: center;
+        font-size: 0.94rem;
+      }
+      .navlinks a {
+        color: #eee;
+      }
+      .hero {
+        padding: 54px 0 10px;
+        display: grid;
+        grid-template-columns: 1.2fr 0.8fr;
+        gap: 40px;
+        align-items: center;
+      }
+      .eyebrow {
+        color: #ff9b55;
+        text-transform: uppercase;
+        font-size: 0.78rem;
+        letter-spacing: 1.8px;
+        font-weight: 700;
+      }
+      h1 {
+        font-size: clamp(2.2rem, 5vw, 3.7rem);
+        line-height: 1.08;
+        margin: 12px 0 18px;
+        letter-spacing: -1.5px;
+      }
+      .hero p {
+        color: #d2d2d2;
+        font-size: 1.08rem;
+        max-width: 680px;
+      }
+      .hero-panel {
+        background: #202020;
+        border: 1px solid #393939;
+        border-radius: 18px;
+        padding: 26px;
+        box-shadow: 0 18px 45px rgba(0, 0, 0, 0.2);
+      }
+      .hero-panel .big {
+        font-size: 2.5rem;
+        font-weight: 800;
+        color: var(--orange);
+        line-height: 1;
+      }
+      .hero-panel h2 {
+        font-size: 1.15rem;
+        margin: 12px 0 8px;
+        color: #fff;
+      }
+      .hero-panel p {
+        font-size: 0.94rem;
+        margin: 0;
+        color: #c9c9c9;
+      }
+      .actions {
+        display: flex;
+        gap: 12px;
+        flex-wrap: wrap;
+        margin-top: 26px;
+      }
+      .btn {
+        display: inline-block;
+        padding: 12px 20px;
+        border-radius: 8px;
+        font-weight: 700;
+        background: var(--orange);
+        color: #111;
+      }
+      .btn:hover {
+        background: #ff8530;
+        text-decoration: none;
+      }
+      .btn.secondary {
+        background: transparent;
+        border: 1px solid #777;
+        color: #fff;
+      }
+      .main {
+        padding: 38px 0 64px;
+      }
+      .notice {
+        background: var(--soft);
+        border-left: 4px solid var(--orange);
+        padding: 15px 18px;
+        border-radius: 8px;
+        margin: 0 0 28px;
+      }
+      .notice strong {
+        display: block;
+        margin-bottom: 3px;
+      }
+      .intro {
+        font-size: 1.08rem;
+        color: #333;
+      }
+      h2 {
+        font-size: 1.75rem;
+        line-height: 1.25;
+        margin: 38px 0 12px;
+        letter-spacing: -0.4px;
+      }
+      h3 {
+        font-size: 1.1rem;
+        margin: 0 0 8px;
+      }
+      p {
+        margin: 0 0 15px;
+      }
+      .cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 16px;
+        margin: 24px 0 34px;
+      }
+      .card {
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: 14px;
+        padding: 22px;
+        box-shadow: var(--shadow);
+      }
+      .num {
+        width: 36px;
+        height: 36px;
+        border-radius: 10px;
+        background: var(--orange);
+        display: grid;
+        place-items: center;
+        font-weight: 800;
+        margin-bottom: 12px;
+      }
+      .card p,
+      .muted {
+        color: var(--muted);
+      }
+      .grid2 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+      }
+      .steps {
+        counter-reset: step;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 14px;
+      }
+      .step {
+        background: #fff;
+        border: 1px solid var(--line);
+        border-radius: 12px;
+        padding: 18px 18px 18px 62px;
+        position: relative;
+      }
+      .step:before {
+        counter-increment: step;
+        content: counter(step, decimal-leading-zero);
+        position: absolute;
+        left: 17px;
+        top: 17px;
+        background: var(--orange);
+        border-radius: 8px;
+        padding: 5px 7px;
+        font-weight: 800;
+      }
+      .dark-section {
+        background: #151515;
+        color: #fff;
+        border-radius: 18px;
+        padding: 28px;
+        margin: 34px 0;
+      }
+      .dark-section h2 {
+        margin: 0 0 10px;
+      }
+      .dark-section p {
+        color: #d0d0d0;
+      }
+      .tags {
+        display: flex;
+        gap: 9px;
+        flex-wrap: wrap;
+        margin-top: 16px;
+      }
+      .tag {
+        display: inline-block;
+        background: #2b2b2b;
+        border: 1px solid #454545;
+        color: #ff9b55;
+        border-radius: 999px;
+        padding: 6px 12px;
+        font-size: 0.88rem;
+        font-weight: 700;
+      }
+      .tiles {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 12px;
+      }
+      .tile {
+        background: #fff;
+        border: 1px solid var(--line);
+        border-radius: 12px;
+        padding: 18px;
+      }
+      .tile strong {
+        display: block;
+        margin-bottom: 6px;
+      }
+      .faq details {
+        background: #fff;
+        border: 1px solid var(--line);
+        border-radius: 10px;
+        padding: 15px 18px;
+        margin: 10px 0;
+      }
+      .faq summary {
+        font-weight: 700;
+        cursor: pointer;
+      }
+      .sources {
+        font-size: 0.92rem;
+      }
+      .sources li {
+        margin: 8px 0;
+      }
+      .footer {
+        background: #111;
+        color: #cfcfcf;
+        padding: 26px 0;
+        font-size: 0.9rem;
+      }
+      .footer strong {
+        color: #fff;
+      }
+      .footer a {
+        color: #ff9b55;
+      }
+      @media (max-width: 760px) {
+        .hero {
+          grid-template-columns: 1fr;
+          padding-top: 38px;
+        }
+        .navlinks {
+          display: none;
+        }
+        .cards,
+        .grid2,
+        .steps,
+        .tiles {
+          grid-template-columns: 1fr;
+        }
+        h2 {
+          font-size: 1.45rem;
+        }
+        .header {
+          padding-bottom: 32px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <div class="wrap">
+        <nav class="nav" aria-label="Main navigation">
+          <div class="brand">
+            <span class="brand-mark" aria-hidden="true">E</span
+            ><span>Exness Login Guide</span>
+          </div>
+          <div class="navlinks">
+            <a href="#login">Login steps</a
+            ><a href="#platforms">MT4 &amp; MT5</a
+            ><a href="#security">Security</a><a href="#faq">FAQs</a>
+          </div>
+        </nav>
+        <section class="hero">
+          <div>
+            <div class="eyebrow">Account access explained</div>
+            <h1>Exness Markets Login</h1>
+            <p>
+              A practical guide to reaching the Exness Personal Area,
+              understanding trading-platform credentials, and resolving common
+              sign-in problems.
+            </p>
+            <div class="actions">
+              <a
+                class="btn"
+                href="https://my.exness.com/accounts/sign-in"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Go to official Exness login ↗</a
+              >
+              <a class="btn secondary" href="#login">View login steps</a>
+            </div>
+          </div>
+          <aside class="hero-panel">
+            <div class="big">01</div>
+            <h2>Use the official sign-in page</h2>
+            <p>
+              This independent guide does not collect login details. Sign in
+              only on an official Exness domain and never enter your password on
+              this page.
+            </p>
+          </aside>
+        </section>
+      </div>
+    </header>
+
+    <main class="wrap main">
+      <div class="notice">
+        <strong>Important regional notice</strong>
+        Exness states that it does not provide services to residents of certain
+        jurisdictions, including the United States. Check the current
+        eligibility terms for your location before attempting to register or use
+        an account.
+      </div>
+
+      <p class="intro">
+        <strong>Exness Markets Login</strong> is commonly used to describe the
+        process of signing in to an Exness account and opening the Personal
+        Area. The Personal Area is where eligible clients can manage account
+        settings and access account-related services. Trading terminals such as
+        MetaTrader 4 (MT4) and MetaTrader 5 (MT5) use separate trading-account
+        credentials, so it is important to choose the correct login method.
+      </p>
+
+      <section class="cards" aria-label="Login guide highlights">
+        <article class="card">
+          <div class="num">01</div>
+          <h3>Personal Area</h3>
+          <p>
+            Use your registered email address and Personal Area password to
+            access account-management features.
+          </p>
+        </article>
+        <article class="card">
+          <div class="num">02</div>
+          <h3>Trading terminals</h3>
+          <p>
+            MT4 and MT5 require the trading account number, its trading
+            password, and the matching server.
+          </p>
+        </article>
+        <article class="card">
+          <div class="num">03</div>
+          <h3>Account safety</h3>
+          <p>
+            Check the web address, protect verification codes, and use official
+            Exness support channels.
+          </p>
+        </article>
+      </section>
+
+      <h2>What Is the Exness Personal Area?</h2>
+      <p>
+        The Exness Personal Area is the account-management section available to
+        eligible Exness clients. Depending on the user's region, account status,
+        and applicable Exness entity, it may provide access to trading accounts,
+        profile and verification information, payment options, and
+        platform-related settings.
+      </p>
+      <p>
+        Available services and account conditions can differ between countries
+        and legal entities. The official Exness website and the terms shown in a
+        client's own Personal Area should be treated as the current reference.
+      </p>
+
+      <h2 id="login">How to Log In to Exness</h2>
+      <p>
+        For account security, use the official Exness sign-in page rather than a
+        login form hosted on an unrelated website.
+      </p>
+      <div class="steps">
+        <article class="step">
+          <h3>Open the official page</h3>
+          <p>
+            Type
+            <a
+              href="https://www.exness.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >exness.com</a
+            >
+            into your browser or use the verified sign-in link.
+          </p>
+        </article>
+        <article class="step">
+          <h3>Select Sign in</h3>
+          <p>Open the account sign-in page from the official Exness website.</p>
+        </article>
+        <article class="step">
+          <h3>Enter your account details</h3>
+          <p>
+            Use the email address and password associated with your Personal
+            Area. Check for typing errors.
+          </p>
+        </article>
+        <article class="step">
+          <h3>Complete any security check</h3>
+          <p>
+            If prompted, follow the on-screen verification instructions. Never
+            share one-time codes with another person.
+          </p>
+        </article>
+        <article class="step">
+          <h3>Open your Personal Area</h3>
+          <p>
+            After successful authentication, review the account services
+            available to you.
+          </p>
+        </article>
+        <article class="step">
+          <h3>Sign out on shared devices</h3>
+          <p>
+            When using a shared computer, sign out and close the browser session
+            when finished.
+          </p>
+        </article>
+      </div>
+      <div class="notice" style="margin-top: 20px">
+        <strong>Security reminder</strong>This page is informational only. It
+        does not contain an Exness login form and will never ask you to submit
+        your email, password, or verification code.
+      </div>
+
+      <h2 id="platforms">Exness MT4 and MT5 Login: What's the Difference?</h2>
+      <div class="grid2">
+        <article class="card">
+          <h3>Exness MT4 Login</h3>
+          <p>
+            To connect an eligible MT4 trading account, enter the trading
+            account number, trading password, and the correct Exness server in
+            MetaTrader 4. These are not the same as the email and password used
+            for the Personal Area.
+          </p>
+        </article>
+        <article class="card">
+          <h3>Exness MT5 Login</h3>
+          <p>
+            MT5 also uses trading-account credentials and a matching server.
+            Exness explains that MT5 credentials are platform-specific and
+            cannot be used to log in to MT4. Check the platform and account type
+            before signing in.
+          </p>
+        </article>
+      </div>
+      <p>
+        Exness describes MetaTrader 5 as a trading terminal. For account
+        management and payment actions, it directs clients to its own
+        account-management tools, including the Exness Trade app where
+        available. Platform features and availability depend on region and
+        account eligibility.
+      </p>
+
+      <div class="dark-section">
+        <h2>Exness platforms and market access</h2>
+        <p>
+          Exness lists several ways to access trading services, including web,
+          mobile, and desktop experiences. Its website currently highlights
+          MetaTrader 5, Exness Terminal, and the Exness Trade app. Instruments
+          and features vary by jurisdiction and account.
+        </p>
+        <div class="tags">
+          <span class="tag">MetaTrader 5</span
+          ><span class="tag">Exness Terminal</span
+          ><span class="tag">Exness Trade app</span
+          ><span class="tag">Web access</span
+          ><span class="tag">Mobile access</span>
+        </div>
+      </div>
+
+      <h2>Common Exness Login Problems</h2>
+      <div class="tiles">
+        <article class="tile">
+          <strong>Incorrect email or password</strong
+          ><span class="muted"
+            >Confirm that you are using the email registered to the Personal
+            Area. Check for extra spaces and use the official password-recovery
+            option if needed.</span
+          >
+        </article>
+        <article class="tile">
+          <strong>MT4/MT5 sign-in fails</strong
+          ><span class="muted"
+            >Check the trading account number, trading password, selected
+            platform, and server name. Personal Area credentials are
+            different.</span
+          >
+        </article>
+        <article class="tile">
+          <strong>Verification is pending</strong
+          ><span class="muted"
+            >Review the status and instructions in your official Personal Area.
+            Upload documents only through official Exness channels.</span
+          >
+        </article>
+        <article class="tile">
+          <strong>Browser or app issue</strong
+          ><span class="muted"
+            >Update your browser or app, check your connection, and try another
+            supported browser if the issue persists.</span
+          >
+        </article>
+        <article class="tile">
+          <strong>Password forgotten</strong
+          ><span class="muted"
+            >Use the password-reset link on the official sign-in page. Do not
+            rely on third-party recovery services.</span
+          >
+        </article>
+        <article class="tile">
+          <strong>Account access restricted</strong
+          ><span class="muted"
+            >Restrictions may relate to verification, security checks, or
+            regional eligibility. Contact official support for account-specific
+            help.</span
+          >
+        </article>
+      </div>
+
+      <h2 id="security">How to Keep Your Exness Account Secure</h2>
+      <p>
+        Protecting account access is essential when using any online financial
+        service. Use a unique password, keep your device and browser updated,
+        and avoid signing in through links in unexpected emails or messages.
+        Check the domain carefully before entering account information. Do not
+        share your password, one-time passcodes, or recovery details with
+        anyone.
+      </p>
+      <p>
+        Exness's client agreement places responsibility on clients to protect
+        their access data and to report suspected unauthorized disclosure
+        promptly. If you believe someone has accessed your account, use the
+        official Exness support route and follow its security instructions.
+      </p>
+
+      <h2>Regional Availability and Regulation</h2>
+      <p>
+        Exness operates through multiple legal entities, each with its own
+        regulatory status and permitted jurisdictions. The official regulation
+        page lists entities and regulators including the Seychelles Financial
+        Services Authority, the Central Bank of Curaçao and Sint Maarten, the
+        British Virgin Islands Financial Services Commission, and other
+        authorities. A regulator's authorization of one entity does not mean
+        every Exness service is available in every country.
+      </p>
+      <p>
+        <strong>United States residents:</strong> Exness's published regional
+        restrictions state that its group does not provide services to residents
+        of the USA. This page is not an invitation to open an account. Always
+        check the current official eligibility and legal information for your
+        own jurisdiction.
+      </p>
+
+      <h2>Understanding the Risks of Trading</h2>
+      <p>
+        Exness warns that its services relate to complex derivative instruments
+        and that prices can fluctuate rapidly. CFDs and leveraged products carry
+        a high level of risk; losses can be substantial and may reach the funds
+        in a trading account. Leverage magnifies both gains and losses. Make
+        sure you understand the product, costs, and risks before making any
+        financial decision. This page is general information, not investment,
+        legal, or tax advice.
+      </p>
+
+      <section class="faq" id="faq">
+        <h2>Frequently Asked Questions</h2>
+        <details>
+          <summary>Where can I find the official Exness login?</summary>
+          <p>
+            Use the sign-in page linked from
+            <a
+              href="https://www.exness.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >the official Exness website</a
+            >. The direct sign-in address currently indexed by Exness is
+            <a
+              href="https://my.exness.com/accounts/sign-in"
+              target="_blank"
+              rel="noopener noreferrer"
+              >my.exness.com/accounts/sign-in</a
+            >.
+          </p>
+        </details>
+        <details>
+          <summary>Are Personal Area and MT4/MT5 passwords the same?</summary>
+          <p>
+            No. The Personal Area uses the registered email and Personal Area
+            password. MT4 and MT5 use trading-account credentials and the
+            relevant server details.
+          </p>
+        </details>
+        <details>
+          <summary>Can I use MT5 credentials in MT4?</summary>
+          <p>
+            Exness states that MT5 credentials are exclusive to that platform
+            and cannot be used to access MT4.
+          </p>
+        </details>
+        <details>
+          <summary>Does Exness offer services in the United States?</summary>
+          <p>
+            Exness's official regional restrictions state that its group does
+            not provide services to residents of the USA. Check the latest
+            official terms for current information.
+          </p>
+        </details>
+        <details>
+          <summary>What should I do if I cannot sign in?</summary>
+          <p>
+            Check your credentials and platform/server selection, use the
+            official password-reset process if needed, and contact Exness
+            through its official website for account-specific assistance.
+          </p>
+        </details>
+      </section>
+
+      <h2>Sources and Further Reading</h2>
+      <ul class="sources">
+        <li>
+          <a
+            href="https://www.exness.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Exness official website</a
+          >
+          — company overview, platforms, trading conditions, and risk
+          information.
+        </li>
+        <li>
+          <a
+            href="https://my.exness.com/accounts/sign-in"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Exness sign-in page</a
+          >
+          — official account access page and sign-in prompts.
+        </li>
+        <li>
+          <a
+            href="https://www.exness.com/regulation/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Exness regulation information</a
+          >
+          — legal entities, regulators, and regional restrictions.
+        </li>
+        <li>
+          <a
+            href="https://www.exness.com/metatrader-5-app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Exness MetaTrader 5 app information</a
+          >
+          — platform details and MT4/MT5 credential distinction.
+        </li>
+        <li>
+          <a
+            href="https://www.exness.com/cdn/media/exnesssc/exness_sc_client_agreement.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Exness (SC) Client Agreement</a
+          >
+          — access-data responsibilities and account security provisions.
+        </li>
+        <li>
+          <a
+            href="https://www.exness.com/cdn/media/docs/risk_disclosure_and_warning_notice.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Exness Risk Disclosure</a
+          >
+          — risks associated with CFDs and leverage.
+        </li>
+      </ul>
+
+      <div class="notice">
+        <strong>Editorial and affiliation disclosure</strong>This is an
+        independent informational guide. It is not an official Exness website
+        and is not affiliated with, endorsed by, or operated by Exness. Exness
+        is a trademark of its respective owner. Product details, eligibility,
+        and terms may change; consult official Exness materials for current
+        information.
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="wrap">
+        <strong>Exness Markets Login — Independent Guide</strong>
+        <p>
+          General information about account access and trading platforms. Not a
+          login portal, financial promotion, or investment advice.
+        </p>
+        <p>
+          Trading CFDs and leveraged products involves significant risk of loss.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

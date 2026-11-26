@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://myexness.github.io/sitemap.xml
